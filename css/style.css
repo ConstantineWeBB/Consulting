@@ -1292,11 +1292,6 @@ h6 {
   }
 }
 @media (max-width: 61.99875em) {
-  .card-big__subtitle {
-    padding-bottom: 2.1875rem;
-  }
-}
-@media (max-width: 61.99875em) {
   .card-big__button {
     margin: 0 auto;
     padding: 17px 102px 19px 102px;
