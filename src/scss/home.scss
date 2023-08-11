@@ -1,0 +1,659 @@
+//====================================================================================================
+.page {
+
+    // .page__container
+
+    &__container {}
+
+    // .page__main-block
+
+    &__main-block {
+        padding-bottom: rem(100);
+        @include adaptiveValue("padding-bottom", 100, 130, 1440, 1199, 1);
+
+        @media (max-width: em(1199)) {
+            @include adaptiveValue("padding-bottom", 130, 60, );
+        }
+
+        @media (max-width:$mobileSmall) {
+            padding-bottom: rem(80);
+        }
+
+        @media (min-width:$tablet) {
+            padding-top: rem(30);
+        }
+    }
+}
+
+.block-main {
+
+    // .block-main__cards
+
+    &__cards {
+        display: flex;
+
+        @media (max-width:$tablet) {
+            flex-direction: column;
+        }
+    }
+
+    // .block-main__big-card
+
+    &__big-card {
+        display: flex;
+        flex-direction: column;
+        background-color: #F6F6F6;
+        border-radius: 48px;
+        @include adaptiveValue("margin-right", 24, 20);
+        @include adaptiveValue("padding-top", 56, 36);
+        @include adaptiveValue("padding-left", 56, 10);
+        flex: 1 1 1284px;
+        position: relative;
+
+        @media (max-width:$tablet) {
+            flex: none;
+            margin-right: 0;
+            padding-right: rem(10);
+            margin-bottom: rem(24);
+            align-items: center;
+            text-align: center;
+            margin: 0 -20px;
+            border-radius: 0;
+        }
+
+        &::after {
+            content: "";
+            background: url('@img/header/man.png') -0.046px 0px / 99.803% 100% no-repeat;
+            position: absolute;
+            @include adaptiveValue("height", 634, 440, 1690, 1200, 1);
+            @include adaptiveValue("width", 653, 454, 1690, 1200, 1);
+            bottom: 0;
+            @include adaptiveValue("right", 88, 0, 1690, 991, 1);
+
+            @media (max-width:$tablet) {
+                @include adaptiveValue("right", 807, -30);
+                height: rem(300);
+                width: rem(309);
+            }
+        }
+    }
+
+    // .block-main__side-cards
+
+    &__side-cards {
+        flex: 1 1 412px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    // .block-main__card
+
+    &__card {
+        &:nth-child(1) {
+            display: flex;
+            background-color: #EBF3FF;
+            align-items: center;
+            padding: 23px 0;
+            @include adaptiveValue("height", 177, 164, 1690, 1200, 1);
+            gap: rem(16);
+            @include adaptiveValue("padding-left", 54, 23, 1690, 1200, 1);
+            @include adaptiveValue("padding-right", 54, 23, 1690, 1200, 1);
+            border: 1px solid #000;
+            border-top-right-radius: 120px;
+            position: relative;
+
+            @media (max-width:$tablet) {
+                order: 2;
+                justify-content: center;
+                height: rem(143);
+            }
+
+            .card__image {
+                @include adaptiveValue("height", 130, 95, 1690, 1200, 1);
+                @include adaptiveValue("width", 160, 116, 1690, 1200, 1);
+            }
+
+            &::before {
+                content: '';
+                background: url('@img/header/item.svg') 0 0 no-repeat;
+                background-position: 100%;
+                background-size: cover;
+                position: absolute;
+                height: 40px;
+                width: 40px;
+                top: 0;
+                right: 0;
+            }
+        }
+
+        &:nth-child(2) {
+            display: flex;
+            align-items: center;
+            padding: 56px 0;
+            @include adaptiveValue("height", 177, 164, 1690, 1200, 1);
+            @include adaptiveValue("gap", 70, 30, 1690, 1200, 1);
+            @include adaptiveValue("padding-left", 54, 23, 1690, 1200, 1);
+            @include adaptiveValue("padding-right", 54, 23, 1690, 1200, 1);
+            margin-bottom: rem(24);
+            border: 1px solid #000;
+            border-top-right-radius: 120px;
+            position: relative;
+
+            @media (max-width:$tablet) {
+                order: 3;
+                margin-bottom: 0;
+                justify-content: center;
+                height: rem(143);
+            }
+
+            @media (max-width:$mobileSmall) {
+                margin-bottom: rem(24);
+            }
+
+            &::before {
+                content: '';
+                background: url('@img/header/item2.svg') 0 0 no-repeat;
+                background-position: 100%;
+                background-size: cover;
+                position: absolute;
+                height: 40px;
+                width: 40px;
+                top: 0;
+                right: 0;
+            }
+        }
+
+        &:nth-child(3) {
+            background-color: #465976;
+            @include adaptiveValue("padding-top", 56, 30, 1690, 1200, 1);
+            @include adaptiveValue("padding-left", 48, 30, 1690, 1200, 1);
+            @include adaptiveValue("padding-right", 48, 30, 1690, 1200, 1);
+            @include adaptiveValue("padding-bottom", 48, 30, 1690, 1200, 1);
+            border-radius: 50px 50px 50px 0;
+
+            //@include adaptiveValue("height", 294, 232,);
+            @media (max-width:$tablet) {
+                order: 1;
+                margin-bottom: rem(24);
+                display: flex;
+                justify-content: space-between;
+                padding: 30px;
+                border-radius: rem(28);
+            }
+
+            @media (max-width:$mobileSmall) {
+                order: 3;
+                flex-direction: column;
+
+            }
+        }
+    }
+}
+
+.card-big {
+
+    // .card-big__title
+
+    &__title {
+        font-family: EB Garamond;
+        @include adaptiveValue("font-size", 50, 34);
+        font-weight: 500;
+        @include adaptiveValue("line-height", 64, 44);
+        @include adaptiveValue("padding-bottom", 32, 20);
+    }
+
+    // .card-big__subtitle
+
+    &__subtitle {
+        @include adaptiveValue("font-size", 20, 16);
+        font-weight: 400;
+        @include adaptiveValue("line-height", 30, 22);
+        padding-bottom: rem(342);
+        @include adaptiveValue("padding-bottom", 342, 300, 1690, 991, 1);
+
+        @media (max-width:$tablet) {
+            padding-bottom: rem(35);
+        }
+    }
+
+    // .card-big__button
+
+    &__button {
+        @media (max-width:$tablet) {
+            margin: 0 auto;
+            padding: 17px 102px 19px 102px;
+            margin-bottom: rem(334);
+        }
+    }
+}
+
+.button {
+
+    // .button_call
+
+    &_call {}
+}
+
+.card {
+
+    // .card__img
+
+    &__img {}
+
+    // .card__image
+
+    &__image {}
+
+    // .card__text
+
+    &__text {
+        font-family: EB Garamond;
+        font-size: rem(22);
+        font-style: normal;
+        font-weight: 600;
+        line-height: 26px;
+        letter-spacing: 0.44px;
+    }
+
+    // .card__text-third-card
+
+    &__text-third-card {
+        color: #FFF;
+        font-family: EB Garamond;
+        justify-items: center;
+        @include adaptiveValue("font-size", 44, 30);
+        font-weight: 500;
+        @include adaptiveValue("line-height", 56, 36);
+        padding-bottom: rem(73);
+
+        @media (max-width:$tablet) {
+            padding-bottom: 0;
+        }
+
+        @media (max-width:$mobileSmall) {
+            padding-bottom: rem(50);
+        }
+    }
+
+    // .card__button
+
+    &__button {
+        flex: 0 0 auto;
+    }
+}
+
+.header {
+
+    // .header__card-text
+
+    &__card-text {}
+}
+
+//====================================================================================================
+.page {
+
+    // .page__what-we-do
+
+    &__what-we-do {
+        margin-bottom: rem(120);
+    }
+}
+
+.do-we-what {
+    display: grid;
+    gap: 72px;
+    @include adaptiveValue("gap", 72, 30);
+    justify-content: center;
+    position: relative;
+    // .do-we-what__title
+
+    &__title {
+        text-align: center;
+        font-family: EB Garamond;
+        @include adaptiveValue("font-size", 120, 42);
+        font-style: normal;
+        font-weight: 500;
+        line-height: 108.333%;
+        @include adaptiveValue("padding-top", 216, 73);
+
+        /* 108.333% */
+        &::before {
+            content: '';
+            background: url('@img/what-we-do/01.svg') 0 0 no-repeat;
+            background-position: 100%;
+            background-size: cover;
+            @include adaptiveValue("width", 389, 236);
+            @include adaptiveValue("height", 452, 275);
+            position: absolute;
+            top: 0;
+            @include adaptiveValue("right", 1490, 920, 1920, 1200, 1);
+            //@include adaptiveValue("left",-190 , -70, 1919, 992, 1 );
+            //left: -100px;
+
+            // @media (min-width: em(1920)) {
+            //     left: -190px;
+            // }
+
+            @media (max-width:em(1150)) {
+                display: none;
+            }
+        }
+
+        &::after {
+            content: '';
+            background: url('@img/what-we-do/04.svg') 0 0 no-repeat;
+            background-position: 100%;
+            background-size: cover;
+            width: 82px;
+            @include adaptiveValue("width", 82, 45, );
+            @include adaptiveValue("height", 80, 45);
+            position: absolute;
+            @include adaptiveValue("top", 70, 0);
+            @include adaptiveValue("right", 43, 21);
+
+            @media (max-width:$mobileSmall) {
+                left: 20px;
+            }
+        }
+    }
+
+    // .do-we-what__subtitle
+
+    &__subtitle {
+        text-align: center;
+        @include adaptiveValue("font-size", 26, 18);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 40px;
+        /* 153.846% */
+        max-width: rem(1026);
+
+        :first-child {
+            @include adaptiveValue("padding-bottom", 60, 40);
+        }
+
+        @media (max-width:$mobileSmall) {
+            padding-bottom: rem(30);
+        }
+
+        &::before {
+            content: '';
+            background: url('@img/what-we-do/03.svg') 0 0 no-repeat;
+            background-position: 100%;
+            background-size: contain;
+            @include adaptiveValue("width", 795, 534, 1920, 1200, 1);
+            @include adaptiveValue("height", 225, 151, 1920, 1200, 1);
+            position: absolute;
+            bottom: 60px;
+            @include adaptiveValue("right", 1640, 1000, 1920, 1200, 1);
+
+            @media (max-width:em(1150)) {
+                display: none;
+            }
+        }
+
+        &::after {
+            content: '';
+            background: url('@img/what-we-do/02.svg') 0 0 no-repeat;
+            background-position: 100%;
+            background-size: cover;
+            @include adaptiveValue("width", 955, 356);
+            @include adaptiveValue("height", 399, 149);
+            position: absolute;
+            bottom: 0;
+            @include adaptiveValue("left", 1166, 50, 1920, 320, 1);
+        }
+    }
+
+    // .do-we-what__button
+
+    &__button {
+        margin: 0 auto;
+        @include adaptiveValue("margin-bottom", 216, 192);
+    }
+}
+
+.button {}
+
+//========================================================================================================================================================
+.page {
+
+    // .page__what-sets-us-apart
+
+    &__what-sets-us-apart {}
+}
+
+.apart-us-sets-what {
+    display: grid;
+    // .apart-us-sets-what__title-block
+
+    &__title-block {
+        font-family: EB Garamond;
+        @include adaptiveValue("font-size", 72, 34);
+        font-style: normal;
+        font-weight: 500;
+        line-height: 111%;
+        @include adaptiveValue("padding-bottom", 80, 40);
+    }
+
+    // .apart-us-sets-what__cards
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        @include adaptiveValue("padding-bottom", 80, 50);
+        @include adaptiveValue("gap", 160, 50);
+
+        @media (max-width:$tablet) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    .element-animation {
+        transform: translateX(100px);
+        opacity: 0;
+
+
+    }
+
+    .element-show {
+        opacity: 1;
+        transition: all 2s;
+        transform: translateX(0);
+
+    }
+
+    // .apart-us-sets-what__card
+
+    &__card {
+        display: grid;
+        grid-template-rows: auto 1fr;
+    }
+
+    // .apart-us-sets-what__image
+
+    &__image {
+        @include adaptiveValue("padding-bottom", 48, 20);
+
+        @media (max-width:$mobileSmall) {
+            justify-self: center;
+        }
+    }
+
+    // .apart-us-sets-what__img
+
+    &__img {
+        @include adaptiveValue("width", 190, 113);
+        @include adaptiveValue("height", 156, 92);
+    }
+
+    // .apart-us-sets-what__title
+
+    &__title {
+        font-family: EB Garamond;
+        @include adaptiveValue("font-size", 40, 22);
+        font-style: normal;
+        font-weight: 600;
+        line-height: 56px;
+        /* 140% */
+        letter-spacing: 0.8px;
+        @include adaptiveValue("padding-bottom", 32, 15);
+    }
+
+    // .apart-us-sets-what__text
+
+    &__text {
+        @include adaptiveValue("font-size", 22, 16);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+    }
+
+    // .apart-us-sets-what__button
+
+    &__button {
+        justify-self: center;
+        white-space: nowrap;
+        padding: 17px 84px 19px 48px;
+
+        @media (max-width:$tablet) {
+            justify-self: auto;
+        }
+    }
+}
+
+.button {}
+
+//========================================================================================================================================================
+.page {
+
+    // .page__services-we-provide
+
+    &__services-we-provide {
+        @include adaptiveValue("padding-top", 115, 50);
+        @include adaptiveValue("padding-bottom", 120, 50);
+
+        :nth-child(3) {
+            @include adaptiveValue("gap", 424, 0, 1920, 998, 1);
+
+            @media (max-width:$mobile) {
+                flex-direction: column;
+                gap: rem(31);
+            }
+
+            :nth-child(1) {
+                @media (max-width: $mobile) {
+                    order: 1;
+                }
+            }
+        }
+    }
+}
+
+.provide-we-services {
+    // .provide-we-services__title
+
+    &__title {
+        font-family: EB Garamond;
+        @include adaptiveValue("font-size", 72, 34);
+        font-style: normal;
+        font-weight: 500;
+        line-height: 111%;
+        @include adaptiveValue("padding-bottom", 80, 40);
+    }
+
+    // .provide-we-services__section
+
+    &__section {
+        display: flex;
+        @include adaptiveValue("gap", 135, 0, 1920, 998, 1);
+
+        &:not(:last-child) {
+            @include adaptiveValue("padding-bottom", 160, 50);
+        }
+
+        @media (max-width:$mobile) {
+            flex-direction: column;
+            gap: rem(31);
+        }
+    }
+
+    // .provide-we-services__button
+
+    &__button {
+        padding: 17px 68px 19px 32px;
+        border: 1px solid #000;
+
+        @media (max-width:$mobile) {
+            display: block;
+            text-align: center;
+
+        }
+    }
+}
+
+.section-services {
+
+    // .section-services__column-image
+
+    &__column-image {
+        flex: 0 1 auto;
+        display: flex;
+    }
+
+    // .section-services__column-img
+
+    &__column-img {
+        justify-self: center;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    // .section-services__column-content
+
+    &__column-content {
+        @media (min-width:$mobile) {
+            min-width: 380px;
+        }
+    }
+
+    // .section-services__title
+
+    &__title {
+        font-family: EB Garamond;
+        @include adaptiveValue("font-size", 40, 22);
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+        letter-spacing: 0.8px;
+        @include adaptiveValue("padding-bottom", 40, 25);
+    }
+
+    // .section-services__list
+
+    &__list {
+        display: grid;
+        @include adaptiveValue("font-size", 22, 16);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        padding-bottom: rem(48);
+        padding-left: rem(30);
+        @include adaptiveValue("gap", 24, 20);
+
+    }
+
+    // .section-services__item
+
+    &__item {
+        list-style: disc;
+    }
+}
+
+.button {
+    // .button_arrow
+
+    &_arrow {}
+}
+
+//========================================================================================================================================================

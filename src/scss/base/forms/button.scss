@@ -1,0 +1,109 @@
+//<BUTTONS (a.btn+tab)>
+// Снипет (HTML): btn
+
+.button {
+	display: inline-flex;
+	padding: 17px 57px 19px 57px;
+	border: 1px solid #000;
+	border-radius: 32px;
+	@include adaptiveValue("font-size", 20, 18);
+	font-weight: 500;
+	line-height: 28px;
+	align-self: start;
+	justify-content: center;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+
+	&::before {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 64px;
+		border-radius: 32px;
+		background-color: #465976;
+		transition: all 0.8s ease;
+	}
+
+	@media (any-hover: hover) {
+		&:hover {
+			color: #fff;
+			transition: all 1s ease;
+
+			&::before {
+				content: '';
+				width: 100%;
+			}
+		}
+	}
+
+	&._fw {
+		width: 100%;
+	}
+
+
+	// .button_arrow
+
+	&_arrow {
+		border: 2px solid #000;
+		span {
+			position: relative;
+			&::after {
+				content: '';
+				position: absolute;
+				background: url('@img/buttons/Arrow.svg') 0 0 no-repeat;
+				width: 32px;
+				height: 32px;
+				right: -44px;
+				align-self: center;
+			}
+
+		}
+
+		&::before {
+			content: '';
+			background-color: #EBF3FF;
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				color: #000;
+			}
+		}
+	}
+
+	// .button_call
+
+	&_call {
+		padding: 17px 30px 19px 80px;
+		background-color: #fff;
+		border: none;
+		z-index: 2;
+
+		&::before {
+			content: '';
+			background-color: #EBF3FF;
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				color: #000;
+			}
+		}
+
+		&::after {
+			content: '';
+			background: url('@img/buttons/phone.svg') 0 0 no-repeat;
+			background-position: 100%;
+			background-size: cover;
+			position: absolute;
+			height: 40px;
+			width: 40px;
+			align-self: center;
+			left: rem(32);
+		}
+	}
+}
