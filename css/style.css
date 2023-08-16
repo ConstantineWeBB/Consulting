@@ -882,12 +882,7 @@ h6 {
 }
 @media (min-width: 61.9375em) and (max-width: 105.625em) {
   .block-main__big-card::after {
-    right: clamp( 0.0625rem , -7.6464592275rem  +  12.4463519313vw , 5.5rem );
-  }
-}
-@media (max-width: 61.9375em) {
-  .block-main__big-card::after {
-    right: 0.0625rem;
+    right: clamp( 0rem , -7.7975679542rem  +  12.5894134478vw , 5.5rem );
   }
 }
 @media (max-width: 61.99875em) {
