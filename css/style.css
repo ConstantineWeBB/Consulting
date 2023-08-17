@@ -882,7 +882,12 @@ h6 {
 }
 @media (min-width: 61.9375em) and (max-width: 105.625em) {
   .block-main__big-card::after {
-    right: clamp( 0rem , -7.7975679542rem  +  12.5894134478vw , 5.5rem );
+    right: clamp( 0.0625rem , -7.6464592275rem  +  12.4463519313vw , 5.5rem );
+  }
+}
+@media (max-width: 61.9375em) {
+  .block-main__big-card::after {
+    right: 0.0625rem;
   }
 }
 @media (max-width: 61.99875em) {
@@ -1292,6 +1297,11 @@ h6 {
     margin-bottom: 20.875rem;
   }
 }
+@media (max-width: 47.99875em) {
+  .card-big__button {
+    width: 100%;
+  }
+}
 
 .card__text {
   font-family: EB Garamond;
@@ -1352,8 +1362,20 @@ h6 {
   flex: 0 0 auto;
 }
 
-.page__what-we-do {
-  margin-bottom: 7.5rem;
+@media (min-width: 107.5em) {
+  .page__what-we-do {
+    padding-bottom: 21rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 107.5em) {
+  .page__what-we-do {
+    padding-bottom: clamp( 17.625rem , 16.8535714286rem  +  3.8571428571vw , 21rem );
+  }
+}
+@media (max-width: 20em) {
+  .page__what-we-do {
+    padding-bottom: 17.625rem;
+  }
 }
 
 .do-we-what {
@@ -1595,7 +1617,7 @@ h6 {
   background-position: 100%;
   background-size: contain;
   position: absolute;
-  bottom: 60px;
+  bottom: 200px;
 }
 @media (min-width: 120em) {
   .do-we-what__subtitle::before {
@@ -1653,7 +1675,6 @@ h6 {
   background-position: 100%;
   background-size: cover;
   position: absolute;
-  bottom: 0;
 }
 @media (min-width: 107.5em) {
   .do-we-what__subtitle::after {
@@ -1687,6 +1708,21 @@ h6 {
 }
 @media (min-width: 120em) {
   .do-we-what__subtitle::after {
+    bottom: 10.3125rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 120em) {
+  .do-we-what__subtitle::after {
+    bottom: clamp( 6.25rem , 5.4375rem  +  4.0625vw , 10.3125rem );
+  }
+}
+@media (max-width: 20em) {
+  .do-we-what__subtitle::after {
+    bottom: 6.25rem;
+  }
+}
+@media (min-width: 120em) {
+  .do-we-what__subtitle::after {
     left: 72.875rem;
   }
 }
@@ -1700,22 +1736,18 @@ h6 {
     left: 3.125rem;
   }
 }
+@media (max-width: 47.99875em) {
+  .do-we-what__subtitle::after {
+    bottom: 5.625rem;
+  }
+}
 .do-we-what__button {
-  margin: 0 auto;
+  display: flex;
+  justify-self: center;
 }
-@media (min-width: 107.5em) {
+@media (max-width: 47.99875em) {
   .do-we-what__button {
-    margin-bottom: 13.5rem;
-  }
-}
-@media (min-width: 20em) and (max-width: 107.5em) {
-  .do-we-what__button {
-    margin-bottom: clamp( 12rem , 11.6571428571rem  +  1.7142857143vw , 13.5rem );
-  }
-}
-@media (max-width: 20em) {
-  .do-we-what__button {
-    margin-bottom: 12rem;
+    justify-self: auto;
   }
 }
 
