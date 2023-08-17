@@ -1706,6 +1706,11 @@ h6 {
     height: 9.3125rem;
   }
 }
+@media (max-width: 47.99875em) {
+  .do-we-what__subtitle::after {
+    bottom: 5.625rem;
+  }
+}
 @media (min-width: 120em) {
   .do-we-what__subtitle::after {
     bottom: 10.3125rem;
@@ -1734,11 +1739,6 @@ h6 {
 @media (max-width: 20em) {
   .do-we-what__subtitle::after {
     left: 3.125rem;
-  }
-}
-@media (max-width: 47.99875em) {
-  .do-we-what__subtitle::after {
-    bottom: 5.625rem;
   }
 }
 .do-we-what__button {
