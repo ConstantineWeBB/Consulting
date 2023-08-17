@@ -1706,7 +1706,17 @@ h6 {
     height: 9.3125rem;
   }
 }
-@media (max-width: 47.99875em) {
+@media (max-width: 47.99875em) and (min-width: 120em) {
+  .do-we-what__subtitle::after {
+    bottom: 5.625rem;
+  }
+}
+@media (max-width: 47.99875em) and (min-width: 20em) and (max-width: 120em) {
+  .do-we-what__subtitle::after {
+    bottom: clamp( 5.625rem , 5.625rem  +  0vw , 5.625rem );
+  }
+}
+@media (max-width: 47.99875em) and (max-width: 20em) {
   .do-we-what__subtitle::after {
     bottom: 5.625rem;
   }
