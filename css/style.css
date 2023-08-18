@@ -1675,6 +1675,7 @@ h6 {
   background-position: 100%;
   background-size: cover;
   position: absolute;
+  bottom: 5.625rem;
 }
 @media (min-width: 107.5em) {
   .do-we-what__subtitle::after {
@@ -1706,22 +1707,17 @@ h6 {
     height: 9.3125rem;
   }
 }
-@media (max-width: 47.99875em) {
-  .do-we-what__subtitle::after {
-    bottom: 5.625rem;
-  }
-}
-@media (min-width: 120em) {
+@media (min-width: 47.99875em) and (min-width: 120em) {
   .do-we-what__subtitle::after {
     bottom: 10.3125rem;
   }
 }
-@media (min-width: 20em) and (max-width: 120em) {
+@media (min-width: 47.99875em) and (min-width: 20em) and (max-width: 120em) {
   .do-we-what__subtitle::after {
     bottom: clamp( 6.25rem , 5.4375rem  +  4.0625vw , 10.3125rem );
   }
 }
-@media (max-width: 20em) {
+@media (min-width: 47.99875em) and (max-width: 20em) {
   .do-we-what__subtitle::after {
     bottom: 6.25rem;
   }
