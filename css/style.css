@@ -782,19 +782,14 @@ h6 {
   flex: 1 1 1284px;
   position: relative;
 }
-@media (min-width: 107.5em) {
+@media (min-width: 120em) {
   .block-main__big-card {
     margin-right: 1.5rem;
   }
 }
-@media (min-width: 20em) and (max-width: 107.5em) {
+@media (min-width: 62em) and (max-width: 120em) {
   .block-main__big-card {
-    margin-right: clamp( 1.25rem , 1.1928571429rem  +  0.2857142857vw , 1.5rem );
-  }
-}
-@media (max-width: 20em) {
-  .block-main__big-card {
-    margin-right: 1.25rem;
+    margin-right: clamp( 1.25rem , 0.9827586207rem  +  0.4310344828vw , 1.5rem );
   }
 }
 @media (min-width: 107.5em) {
