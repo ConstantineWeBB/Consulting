@@ -2187,3 +2187,168 @@ h6 {
 .section-services__item {
   list-style: disc;
 }
+
+@media (min-width: 107.5em) {
+  .page__our-principles {
+    padding-top: 18.125rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 107.5em) {
+  .page__our-principles {
+    padding-top: clamp( 5.625rem , 2.7678571429rem  +  14.2857142857vw , 18.125rem );
+  }
+}
+@media (max-width: 20em) {
+  .page__our-principles {
+    padding-top: 5.625rem;
+  }
+}
+
+.principles-our {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
+}
+@media (max-width: 74.9375em) {
+  .principles-our {
+    grid-auto-rows: auto 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 74.9375em) {
+  .principles-our {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.principles-our__title {
+  font-family: EB Garamond;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 111.111%;
+  position: relative;
+}
+@media (min-width: 107.5em) {
+  .principles-our__title {
+    padding: 3rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 107.5em) {
+  .principles-our__title {
+    padding: clamp( 0rem , -0.6857142857rem  +  3.4285714286vw , 3rem );
+  }
+}
+@media (max-width: 20em) {
+  .principles-our__title {
+    padding: 0rem;
+  }
+}
+@media (min-width: 107.5em) {
+  .principles-our__title {
+    font-size: 4.5rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 107.5em) {
+  .principles-our__title {
+    font-size: clamp( 2.125rem , 1.5821428571rem  +  2.7142857143vw , 4.5rem );
+  }
+}
+@media (max-width: 20em) {
+  .principles-our__title {
+    font-size: 2.125rem;
+  }
+}
+@media (max-width: 61.99875em) {
+  .principles-our__title {
+    padding-bottom: 2.5rem;
+  }
+}
+@media (max-width: 61.99875em) {
+  .principles-our__title br {
+    display: none;
+  }
+}
+.principles-our__title::before {
+  content: "";
+  position: absolute;
+  background: url("../img/icons/star.svg") 0 0 no-repeat;
+  background-position: 100%;
+  background-size: cover;
+  width: 174px;
+  height: 136px;
+  top: -136px;
+  left: 0;
+}
+@media (max-width: 74.9375em) {
+  .principles-our__title::before {
+    display: none;
+  }
+}
+.principles-our__card {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  border-radius: 48px;
+  border: 2px solid var(--primary, #000);
+  padding: 64px 56px 48px 56px;
+}
+@media (min-width: 107.5em) {
+  .principles-our__card {
+    gap: 5.3125rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 107.5em) {
+  .principles-our__card {
+    gap: clamp( 1.25rem , 0.3214285714rem  +  4.6428571429vw , 5.3125rem );
+  }
+}
+@media (max-width: 20em) {
+  .principles-our__card {
+    gap: 1.25rem;
+  }
+}
+@media (max-width: 75em) {
+  .principles-our__card {
+    padding: 40px;
+  }
+}
+@media (max-width: 47.99875em) {
+  .principles-our__card {
+    padding: 30px;
+  }
+}
+.principles-our__card:nth-child(even) {
+  background-color: #EBF3FF;
+}
+.principles-our__card:nth-child(odd) {
+  background-color: #F6F6F6;
+}
+.principles-our__text {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 153.846%;
+  letter-spacing: 0.44px;
+}
+@media (min-width: 107.5em) {
+  .principles-our__text {
+    font-size: 1.625rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 107.5em) {
+  .principles-our__text {
+    font-size: clamp( 1.375rem , 1.3178571429rem  +  0.2857142857vw , 1.625rem );
+  }
+}
+@media (max-width: 20em) {
+  .principles-our__text {
+    font-size: 1.375rem;
+  }
+}
+@media (max-width: 47.99875em) {
+  .principles-our__text {
+    font-family: EB Garamond;
+  }
+}
+@media (max-width: 61.99875em) {
+  .principles-our__image {
+    height: 54px;
+    width: 75px;
+  }
+}
