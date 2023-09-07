@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230822172309">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230907153545">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -247,6 +247,41 @@
 						<img class="principles-our__image" src="img/buttons/pseudo-button.svg" alt="">
 					</div>
 				</section>
+				<section class="page__satisfied-clients clients-satisfied">
+					<div class="clients-satisfied__title">100+ Satisfied Clients</div>
+					<div class="clients-satisfied__img">
+						<img src="img/satisfied-clients/01.svg" alt="">
+					</div>
+					<div class="clients-satisfied__body">
+						<p class="clients-satisfied__text">At G&D Consulting, we have successfully helped numerous clients in overcoming financial, tax, and accounting challenges.
+							With a growing base of over 100 satisfied clients, our team of experts is well-equipped with the essential knowledge and
+							expertise to prevent errors, ensure compliance, and capitalize on opportunities that others might overlook. By
+							efficiently managing time-consuming tasks, we enable our clients to focus on their core business objectives and personal
+							endeavors.</p>
+						<p class="clients-satisfied__text">Our commitment to cost-effectiveness and security has earned us the trust of a wide range of clients. We provide
+							top-notch services without compromising on quality or the safeguarding of your confidential information. Our transparent
+							and prompt communication guarantees clients remain well-informed and supported throughout our collaboration.</p>
+					</div>
+				</section>
+				<section class="page__form form">
+					<div class="form__title">Let’s work together!</div>
+					<form data-dev data-popup-message="#popup-successfully" method="POST" action="#" class="form__body">
+						<div class="form__input-field"><input data-required data-error="*" autocomplete="off" type="text" name="form[]" placeholder="Your name" class="form__input"></div>
+						<div class="form__input-field"><input data-required="email" data-error="*" autocomplete="off" type="email" name="form[]" placeholder="Your Email" class="form__input"></div>
+						<select data-required data-error="*" data-validate data-scroll name="form[]" class="form__select">
+							<option value disabled selected>What is your request ?</option>
+							<option value="2">Accounting Services</option>
+							<option value="3">Tax Consulting</option>
+							<option value="4">Financial Consulting</option>
+							<option value="3">Tax Consulting</option>
+							<option value="4">Financial Consulting</option>
+							<option value="3">Tax Consulting</option>
+							<option value="4">Financial Consulting</option>
+						</select>
+						<div class="form__area-field"><textarea data-tippy-content="This will help us get down to business faster." name="form[]" placeholder="Tell more about your request" class="form__textarea"></textarea></div>
+						<button type="submit" class="form__button button button_black">Send</button>
+					</form>
+				</section>
 			</div>
 		</main>
 		<footer class="footer">
@@ -272,19 +307,23 @@
 			</div>
 		</footer>
 	</div>
-	<!-- 
-<div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
+
+	<div id="popup-successfully" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__title">
+					Application sent! <br>
+					We will contact you shortly!
+				</div>
+				<div class="popup__image">
+					<img class="popup__img" src="img/other/01.svg" alt="">
+				</div>
+				<a href="#" class="popup__button button button_black">Send request again</a>
 			</div>
 		</div>
 	</div>
-</div>
- -->
-
-	<script src="js/app.min.js?_v=20230822172309"></script>
+	<script src="js/app.min.js?_v=20230907153545"></script>
 </body>
 
 </html>
