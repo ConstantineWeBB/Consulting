@@ -2580,7 +2580,16 @@ body.popup-show::after {
     padding: 40px;
     border-radius: 28px;
   }
-  .principles-our__card:not(:first-child) {
+  .principles-our__card:nth-child(3) {
+    border-top: none;
+  }
+  .principles-our__card:nth-child(4) {
+    border-top: none;
+  }
+  .principles-our__card:nth-child(5) {
+    border-top: none;
+  }
+  .principles-our__card:nth-child(6) {
     border-top: none;
   }
 }
