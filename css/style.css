@@ -237,6 +237,9 @@ textarea {
   padding: 23px 32px;
   border: 1px solid #616161;
 }
+.form__input._focus {
+  outline: 1px solid #000;
+}
 textarea.form__textarea {
   resize: none;
   padding: 0px 0px;
@@ -2573,6 +2576,7 @@ body.popup-show::after {
   .principles-our__card {
     padding: 40px;
     border-radius: 28px;
+    border-top: none;
   }
 }
 @media (max-width: 47.99875em) {
