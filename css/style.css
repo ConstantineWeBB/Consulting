@@ -2578,7 +2578,7 @@ body.popup-show::after {
 @media (max-width: 75em) {
   .principles-our__card {
     padding: 40px;
-    border-radius: 28px;
+    border-radius: 38px;
   }
   .principles-our__card:nth-child(3) {
     border-top: none;
