@@ -2580,7 +2580,7 @@ body.popup-show::after {
     padding: 40px;
     border-radius: 28px;
   }
-  .principles-our__card :not(:first-child) {
+  .principles-our__card:not(:first-child) {
     border-top: none;
   }
 }
