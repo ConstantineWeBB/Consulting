@@ -2157,8 +2157,7 @@ body.popup-show::after {
   font-family: EB Garamond;
   font-style: normal;
   font-weight: 600;
-  line-height: 56px;
-  /* 140% */
+  line-height: 140%;
   letter-spacing: 0.8px;
 }
 @media (min-width: 107.5em) {
@@ -2490,45 +2489,45 @@ body.popup-show::after {
   }
 }
 .principles-our__title {
-  font-family: EB Garamond;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 111.111%;
-  position: relative;
+  padding-bottom: 2.5rem;
 }
-@media (min-width: 107.5em) {
+@media (min-width: 61.99875em) {
+  .principles-our__title {
+    font-family: EB Garamond;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 111.111%;
+    position: relative;
+  }
+}
+@media (min-width: 61.99875em) and (min-width: 107.5em) {
   .principles-our__title {
     padding: 3rem;
   }
 }
-@media (min-width: 20em) and (max-width: 107.5em) {
+@media (min-width: 61.99875em) and (min-width: 20em) and (max-width: 107.5em) {
   .principles-our__title {
     padding: clamp( 0.0625rem , -0.6089285714rem  +  3.3571428571vw , 3rem );
   }
 }
-@media (max-width: 20em) {
+@media (min-width: 61.99875em) and (max-width: 20em) {
   .principles-our__title {
     padding: 0.0625rem;
   }
 }
-@media (min-width: 107.5em) {
+@media (min-width: 61.99875em) and (min-width: 107.5em) {
   .principles-our__title {
     font-size: 4.5rem;
   }
 }
-@media (min-width: 20em) and (max-width: 107.5em) {
+@media (min-width: 61.99875em) and (min-width: 20em) and (max-width: 107.5em) {
   .principles-our__title {
     font-size: clamp( 2.125rem , 1.5821428571rem  +  2.7142857143vw , 4.5rem );
   }
 }
-@media (max-width: 20em) {
+@media (min-width: 61.99875em) and (max-width: 20em) {
   .principles-our__title {
     font-size: 2.125rem;
-  }
-}
-@media (max-width: 61.99875em) {
-  .principles-our__title {
-    padding-bottom: 2.5rem;
   }
 }
 @media (max-width: 74.9375em) {
