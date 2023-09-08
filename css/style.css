@@ -2264,12 +2264,12 @@ body.popup-show::after {
 }
 @media (min-width: 62.375em) and (max-width: 120em) {
   .page__services-we-provide :nth-child(3) {
-    gap: clamp( 0rem , -28.6843817787rem  +  45.9869848156vw , 26.5rem );
+    gap: clamp( 0.0625rem , -28.5542299349rem  +  45.8785249458vw , 26.5rem );
   }
 }
 @media (max-width: 62.375em) {
   .page__services-we-provide :nth-child(3) {
-    gap: 0rem;
+    gap: 0.0625rem;
   }
 }
 @media (max-width: 47.99875em) {
@@ -2331,6 +2331,11 @@ body.popup-show::after {
 @media (min-width: 62.375em) and (max-width: 120em) {
   .provide-we-services__section {
     gap: clamp( 0.0625rem , -9.0028470716rem  +  14.5336225597vw , 8.4375rem );
+  }
+}
+@media (max-width: 62.375em) {
+  .provide-we-services__section {
+    gap: 0.0625rem;
   }
 }
 @media (min-width: 107.5em) {
