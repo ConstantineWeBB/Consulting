@@ -2559,6 +2559,8 @@ body.popup-show::after {
   border-radius: 48px;
   border: 2px solid var(--primary, #000);
   padding: 64px 56px 48px 56px;
+  margin-bottom: -1px;
+  margin-right: -1px;
 }
 @media (min-width: 107.5em) {
   .principles-our__card {
@@ -2579,7 +2581,7 @@ body.popup-show::after {
   .principles-our__card {
     padding: 40px;
     border-radius: 28px;
-    margin-bottom: -1px;
+    margin-right: 0;
   }
 }
 @media (max-width: 47.99875em) {
