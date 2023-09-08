@@ -2333,11 +2333,6 @@ body.popup-show::after {
     gap: clamp( 0.0625rem , -9.0028470716rem  +  14.5336225597vw , 8.4375rem );
   }
 }
-@media (max-width: 62.375em) {
-  .provide-we-services__section {
-    gap: 0.0625rem;
-  }
-}
 @media (min-width: 107.5em) {
   .provide-we-services__section:not(:last-child) {
     padding-bottom: 10rem;
