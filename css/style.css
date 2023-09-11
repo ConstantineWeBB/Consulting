@@ -104,6 +104,11 @@ h6 {
   margin: 0 auto;
   padding: 0 0.9375rem;
 }
+@media (min-width: 37.5em) {
+  [class*=__container] {
+    padding: 0 50px;
+  }
+}
 
 .button {
   display: inline-flex;
@@ -1090,11 +1095,13 @@ body.popup-show::after {
   .block-main__big-card {
     flex: none;
     margin-right: 0;
-    padding-right: 0.625rem;
+    padding-right: 3.125rem;
+    padding-left: 3.125rem;
     margin-bottom: 1.5rem;
     align-items: center;
     text-align: center;
-    margin: 0 -20px;
+    margin-left: -3.125rem;
+    margin-right: -3.125rem;
     border-radius: 0;
   }
 }
@@ -1162,12 +1169,12 @@ body.popup-show::after {
 }
 @media (max-width: 61.99875em) and (min-width: 20em) and (max-width: 107.5em) {
   .block-main__big-card::after {
-    right: clamp( -1.875rem , -13.8321428571rem  +  59.7857142857vw , 50.4375rem );
+    right: clamp( -0.625rem , -12.2964285714rem  +  58.3571428571vw , 50.4375rem );
   }
 }
 @media (max-width: 61.99875em) and (max-width: 20em) {
   .block-main__big-card::after {
-    right: -1.875rem;
+    right: -0.625rem;
   }
 }
 .block-main__side-cards {
@@ -1548,6 +1555,9 @@ body.popup-show::after {
   .card-big__subtitle {
     padding-bottom: 2.1875rem;
   }
+}
+.card-big__button {
+  white-space: nowrap;
 }
 @media (max-width: 61.99875em) {
   .card-big__button {
@@ -2837,7 +2847,7 @@ body.popup-show::after {
 }
 
 .page__form {
-  padding-bottom: 17.5rem;
+  padding-bottom: 30rem;
 }
 @media (min-width: 107.5em) {
   .page__form {
@@ -2852,6 +2862,16 @@ body.popup-show::after {
 @media (max-width: 20em) {
   .page__form {
     padding-top: 5.625rem;
+  }
+}
+@media (max-width: 61.99875em) {
+  .page__form {
+    padding-bottom: 100px;
+  }
+}
+@media (max-width: 29.99875em) {
+  .page__form {
+    padding-bottom: 200px;
   }
 }
 
@@ -3073,6 +3093,199 @@ body.popup-show::after {
 @media (max-width: 20em) {
   .form .form__error {
     margin-top: -5.625rem;
+  }
+}
+
+.page__social {
+  position: relative;
+}
+@media (min-width: 107.5em) {
+  .page__social {
+    padding-bottom: 12.5rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 107.5em) {
+  .page__social {
+    padding-bottom: clamp( 5.625rem , 4.0535714286rem  +  7.8571428571vw , 12.5rem );
+  }
+}
+@media (max-width: 20em) {
+  .page__social {
+    padding-bottom: 5.625rem;
+  }
+}
+.page__social::after {
+  content: "";
+}
+@media (min-width: 61.99875em) {
+  .page__social::after {
+    background: url("../img/social/decor.svg") 0 0 no-repeat;
+    background-position: 100%;
+    background-size: cover;
+    left: 0;
+    transform: translate(-420px);
+    width: 2560px;
+    height: 350px;
+    position: absolute;
+  }
+}
+@media (min-width: 61.99875em) and (min-width: 107.5em) {
+  .page__social::after {
+    bottom: 43.75rem;
+  }
+}
+@media (min-width: 61.99875em) and (min-width: 20em) and (max-width: 107.5em) {
+  .page__social::after {
+    bottom: clamp( 31.25rem , 28.3928571429rem  +  14.2857142857vw , 43.75rem );
+  }
+}
+@media (min-width: 61.99875em) and (max-width: 20em) {
+  .page__social::after {
+    bottom: 31.25rem;
+  }
+}
+@media (min-width: 61.99875em) and (min-width: 120em) {
+  .page__social::after {
+    translate: -1.25rem;
+  }
+}
+@media (min-width: 61.99875em) and (min-width: 61.99875em) and (max-width: 120em) {
+  .page__social::after {
+    translate: clamp( -32.5rem , -65.9037790134rem  +  53.8781491778vw , -1.25rem );
+  }
+}
+@media (min-width: 61.99875em) and (max-width: 61.99875em) {
+  .page__social::after {
+    translate: -32.5rem;
+  }
+}
+@media (max-width: 29.99875em) {
+  .page__social::after {
+    background: url("../img/social/decor-small.svg") 0 0 no-repeat;
+    width: 581px;
+    height: 84px;
+    top: -150px;
+    left: 0;
+    transform: translate(-420px);
+    position: absolute;
+  }
+}
+@media (max-width: 29.99875em) and (min-width: 29.99875em) {
+  .page__social::after {
+    translate: 25rem;
+  }
+}
+@media (max-width: 29.99875em) and (min-width: 20em) and (max-width: 29.99875em) {
+  .page__social::after {
+    translate: clamp( 21.25rem , 13.7490623828rem  +  37.504688086vw , 25rem );
+  }
+}
+@media (max-width: 29.99875em) and (max-width: 20em) {
+  .page__social::after {
+    translate: 21.25rem;
+  }
+}
+
+.social {
+  display: grid;
+  justify-items: center;
+}
+.social__content {
+  max-width: 50.8125rem;
+}
+.social__title {
+  text-align: center;
+  font-family: EB Garamond;
+  font-weight: 500;
+  line-height: 111.111%;
+}
+@media (min-width: 107.5em) {
+  .social__title {
+    font-size: 4.5rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 107.5em) {
+  .social__title {
+    font-size: clamp( 2.125rem , 1.5821428571rem  +  2.7142857143vw , 4.5rem );
+  }
+}
+@media (max-width: 20em) {
+  .social__title {
+    font-size: 2.125rem;
+  }
+}
+@media (min-width: 107.5em) {
+  .social__title {
+    padding-bottom: 5.625rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 107.5em) {
+  .social__title {
+    padding-bottom: clamp( 2.5rem , 1.7857142857rem  +  3.5714285714vw , 5.625rem );
+  }
+}
+@media (max-width: 20em) {
+  .social__title {
+    padding-bottom: 2.5rem;
+  }
+}
+@media (max-width: 29.99875em) {
+  .social__title {
+    text-align: left;
+  }
+}
+.social__buttons {
+  display: flex;
+  gap: 2rem;
+}
+@media (min-width: 107.5em) {
+  .social__buttons {
+    padding-bottom: 5rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 107.5em) {
+  .social__buttons {
+    padding-bottom: clamp( 2.5rem , 1.9285714286rem  +  2.8571428571vw , 5rem );
+  }
+}
+@media (max-width: 20em) {
+  .social__buttons {
+    padding-bottom: 2.5rem;
+  }
+}
+@media (max-width: 61.99875em) {
+  .social__buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.social__button:hover {
+  opacity: 0.8;
+  transition: all 0.5s ease 0s;
+}
+.social__text {
+  font-weight: 400;
+  line-height: 153.846%;
+  text-align: center;
+}
+@media (min-width: 107.5em) {
+  .social__text {
+    font-size: 1.625rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 107.5em) {
+  .social__text {
+    font-size: clamp( 1rem , 0.8571428571rem  +  0.7142857143vw , 1.625rem );
+  }
+}
+@media (max-width: 20em) {
+  .social__text {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 47.99875em) {
+  .social__text {
+    text-align: left;
   }
 }
 .tippy-box[data-animation=fade][data-state=hidden] {
