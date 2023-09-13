@@ -3575,11 +3575,10 @@ body.popup-show::after {
 }
 .about-block_v2 .about-block__column-image {
   display: block;
-  align-self: center;
 }
-@media (max-width: 61.99875em) {
-  .about-block_v2 .about-block__column-image * {
-    width: 100%;
+@media (min-width: 61.99875em) {
+  .about-block_v2 .about-block__column-image {
+    align-self: center;
   }
 }
 @media (max-width: 61.99875em) {
