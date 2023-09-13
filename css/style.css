@@ -3578,6 +3578,11 @@ body.popup-show::after {
   align-self: center;
 }
 @media (max-width: 61.99875em) {
+  .about-block_v2 .about-block__column-image * {
+    width: 100%;
+  }
+}
+@media (max-width: 61.99875em) {
   .about-block_v2 :nth-child(1) {
     order: 2;
   }
