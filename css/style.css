@@ -3852,8 +3852,10 @@ body.popup-show::after {
 .block-call__img {
   max-width: 100%;
 }
-.block-call__button-box {
-  width: 100%;
+@media (max-width: 47.99875em) {
+  .block-call__button-box {
+    width: 100%;
+  }
 }
 .block-call__button {
   white-space: nowrap;
