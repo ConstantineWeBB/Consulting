@@ -2383,6 +2383,9 @@ body.popup-show::after {
   max-width: 100%;
   max-height: 100%;
 }
+.section-services__column-content {
+  align-self: center;
+}
 @media (min-width: 47.99875em) {
   .section-services__column-content {
     min-width: 380px;
@@ -3378,7 +3381,7 @@ body.popup-show::after {
 }
 
 .block-title-main__body {
-  max-width: 71.125rem;
+  max-width: 64.125rem;
   margin: 0 auto;
 }
 .block-title-main__title {
@@ -3572,43 +3575,43 @@ body.popup-show::after {
   }
 }
 
+@media (max-width: 61.99875em) {
+  .about-block_revers-blocks-addbutton :nth-child(1) {
+    order: 2;
+  }
+}
 @media (min-width: 107.5em) {
-  .about-block_v2 .about-block__subtitle {
+  .about-block_revers-blocks-addbutton .about-block__subtitle {
     padding-bottom: 3.5rem;
   }
 }
 @media (min-width: 20em) and (max-width: 107.5em) {
-  .about-block_v2 .about-block__subtitle {
+  .about-block_revers-blocks-addbutton .about-block__subtitle {
     padding-bottom: clamp( 1.5625rem , 1.1196428571rem  +  2.2142857143vw , 3.5rem );
   }
 }
 @media (max-width: 20em) {
-  .about-block_v2 .about-block__subtitle {
+  .about-block_revers-blocks-addbutton .about-block__subtitle {
     padding-bottom: 1.5625rem;
   }
 }
-.about-block_v2 .about-block__button {
+.about-block_revers-blocks-addbutton .about-block__button {
   padding: 17px 68px 19px 32px;
   border: 1px solid #000;
   white-space: nowrap;
 }
 @media (max-width: 61.99875em) {
-  .about-block_v2 .about-block__button {
+  .about-block_revers-blocks-addbutton .about-block__button {
     display: block;
     text-align: center;
   }
 }
-.about-block_v2 .about-block__column-image {
+.about-block_revers-blocks-addbutton .about-block__column-image {
   display: block;
 }
 @media (min-width: 61.99875em) {
-  .about-block_v2 .about-block__column-image {
+  .about-block_revers-blocks-addbutton .about-block__column-image {
     align-self: center;
-  }
-}
-@media (max-width: 61.99875em) {
-  .about-block_v2 :nth-child(1) {
-    order: 2;
   }
 }
 
@@ -3879,37 +3882,211 @@ body.popup-show::after {
 }
 
 @media (min-width: 107.5em) {
-  .social_v2 .social__title {
+  .social_revers-blocks-changebottoms .social__title {
     padding-bottom: 3.5rem;
   }
 }
 @media (min-width: 20em) and (max-width: 107.5em) {
-  .social_v2 .social__title {
+  .social_revers-blocks-changebottoms .social__title {
     padding-bottom: clamp( 2.5rem , 2.2714285714rem  +  1.1428571429vw , 3.5rem );
   }
 }
 @media (max-width: 20em) {
-  .social_v2 .social__title {
+  .social_revers-blocks-changebottoms .social__title {
     padding-bottom: 2.5rem;
   }
 }
 @media (min-width: 107.5em) {
-  .social_v2 .social__text {
+  .social_revers-blocks-changebottoms .social__text {
     padding-bottom: 5rem;
   }
 }
 @media (min-width: 20em) and (max-width: 107.5em) {
-  .social_v2 .social__text {
+  .social_revers-blocks-changebottoms .social__text {
     padding-bottom: clamp( 2.5rem , 1.9285714286rem  +  2.8571428571vw , 5rem );
   }
 }
 @media (max-width: 20em) {
-  .social_v2 .social__text {
+  .social_revers-blocks-changebottoms .social__text {
     padding-bottom: 2.5rem;
   }
 }
-.social_v2 .social__buttons {
+.social_revers-blocks-changebottoms .social__buttons {
   padding-bottom: 0;
+}
+
+@media (min-width: 107.5em) {
+  .page__block-about-accounting {
+    padding-top: 7.5rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 107.5em) {
+  .page__block-about-accounting {
+    padding-top: clamp( 1.875rem , 0.5892857143rem  +  6.4285714286vw , 7.5rem );
+  }
+}
+@media (max-width: 20em) {
+  .page__block-about-accounting {
+    padding-top: 1.875rem;
+  }
+}
+@media (min-width: 107.5em) {
+  .page__block-about-accounting {
+    padding-bottom: 13.9375rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 107.5em) {
+  .page__block-about-accounting {
+    padding-bottom: clamp( 5.625rem , 3.725rem  +  9.5vw , 13.9375rem );
+  }
+}
+@media (max-width: 20em) {
+  .page__block-about-accounting {
+    padding-bottom: 5.625rem;
+  }
+}
+
+@media (max-width: 61.99875em) {
+  .about-block_textalign-addbutton {
+    text-align: center;
+  }
+}
+@media (min-width: 107.5em) {
+  .about-block_textalign-addbutton .about-block__subtitle {
+    padding-bottom: 3.5rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 107.5em) {
+  .about-block_textalign-addbutton .about-block__subtitle {
+    padding-bottom: clamp( 1.5625rem , 1.1196428571rem  +  2.2142857143vw , 3.5rem );
+  }
+}
+@media (max-width: 20em) {
+  .about-block_textalign-addbutton .about-block__subtitle {
+    padding-bottom: 1.5625rem;
+  }
+}
+.about-block_textalign-addbutton .about-block__button {
+  padding: 17px 68px 19px 32px;
+  border: 1px solid #000;
+  white-space: nowrap;
+}
+@media (max-width: 61.99875em) {
+  .about-block_textalign-addbutton .about-block__button {
+    display: block;
+    text-align: center;
+  }
+}
+.about-block_textalign-addbutton .about-block__column-image {
+  display: block;
+}
+@media (min-width: 61.99875em) {
+  .about-block_textalign-addbutton .about-block__column-image {
+    align-self: center;
+  }
+}
+@media (min-width: 107.5em) {
+  .about-block_textalign-addbutton p:not(:last-child) {
+    padding-bottom: 3.125rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 107.5em) {
+  .about-block_textalign-addbutton p:not(:last-child) {
+    padding-bottom: clamp( 1.25rem , 0.8214285714rem  +  2.1428571429vw , 3.125rem );
+  }
+}
+@media (max-width: 20em) {
+  .about-block_textalign-addbutton p:not(:last-child) {
+    padding-bottom: 1.25rem;
+  }
+}
+
+@media (min-width: 107.5em) {
+  .page__block-about-accounting-second {
+    padding-bottom: 16rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 107.5em) {
+  .page__block-about-accounting-second {
+    padding-bottom: clamp( 5.625rem , 3.2535714286rem  +  11.8571428571vw , 16rem );
+  }
+}
+@media (max-width: 20em) {
+  .page__block-about-accounting-second {
+    padding-bottom: 5.625rem;
+  }
+}
+@media (min-width: 107.5em) {
+  .page__block-about-accounting-second .section-services__title {
+    font-size: 3.125rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 107.5em) {
+  .page__block-about-accounting-second .section-services__title {
+    font-size: clamp( 2.125rem , 1.8964285714rem  +  1.1428571429vw , 3.125rem );
+  }
+}
+@media (max-width: 20em) {
+  .page__block-about-accounting-second .section-services__title {
+    font-size: 2.125rem;
+  }
+}
+
+@media (min-width: 40em) {
+  .provide-we-services_media-gap .provide-we-services__section {
+    flex-direction: row;
+  }
+}
+@media (min-width: 120em) {
+  .provide-we-services_media-gap .provide-we-services__section {
+    gap: 12.8125rem;
+  }
+}
+@media (min-width: 62.375em) and (max-width: 120em) {
+  .provide-we-services_media-gap .provide-we-services__section {
+    gap: clamp( 0.0625rem , -13.7384761388rem  +  22.125813449vw , 12.8125rem );
+  }
+}
+@media (max-width: 62.375em) {
+  .provide-we-services_media-gap .provide-we-services__section {
+    gap: 0.0625rem;
+  }
+}
+@media (max-width: 29.99875em) {
+  .provide-we-services_media-gap .provide-we-services__section {
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 29.99875em) {
+  .section-services_change-title-js:not(:last-child) {
+    padding-bottom: 0;
+  }
+}
+@media (min-width: 61.99875em) {
+  .section-services_change-title-js :nth-child(1) {
+    order: 1;
+  }
+}
+.section-services_change-title-js .section-services__column-image {
+  display: block;
+  align-self: center;
+}
+.section-services_change-title-js .section-services__column-content {
+  flex: 0 0 50%;
+}
+
+.section-services__button-box {
+  display: flex;
+}
+.section-services__button {
+  margin: 0 auto;
+  white-space: nowrap;
+}
+@media (max-width: 61.99875em) {
+  .section-services__button {
+    width: 100%;
+  }
 }
 .tippy-box[data-animation=fade][data-state=hidden] {
   opacity: 0;
