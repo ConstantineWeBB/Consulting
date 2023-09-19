@@ -4059,7 +4059,7 @@ body.popup-show::after {
 }
 
 @media (max-width: 29.99875em) {
-  .section-services_change-title-js:not(:last-child) {
+  .section-services_change-title-js :not(:last-child) {
     padding-bottom: 0;
   }
 }
