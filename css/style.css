@@ -4052,12 +4052,24 @@ body.popup-show::after {
     gap: 0.0625rem;
   }
 }
+@media (min-width: 107.5em) {
+  .provide-we-services_media-gap .provide-we-services__section {
+    padding-bottom: 7.5rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 107.5em) {
+  .provide-we-services_media-gap .provide-we-services__section {
+    padding-bottom: clamp( 0.0625rem , -1.6375rem  +  8.5vw , 7.5rem );
+  }
+}
+@media (max-width: 20em) {
+  .provide-we-services_media-gap .provide-we-services__section {
+    padding-bottom: 0.0625rem;
+  }
+}
 @media (max-width: 29.99875em) {
   .provide-we-services_media-gap .provide-we-services__section {
     gap: 1.25rem;
-  }
-  .provide-we-services_media-gap .provide-we-services__section:not(:last-child) {
-    padding-bottom: 0;
   }
 }
 
