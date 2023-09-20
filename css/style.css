@@ -4058,8 +4058,10 @@ body.popup-show::after {
   }
 }
 
-.section-services_change-title-js:not(:last-child) {
-  padding-bottom: 0;
+@media (max-width: 29.99875em) {
+  .section-services_change-title-js:not(:last-child) {
+    padding-bottom: 0 !important;
+  }
 }
 @media (min-width: 61.99875em) {
   .section-services_change-title-js :nth-child(1) {
