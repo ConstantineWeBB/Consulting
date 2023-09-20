@@ -4056,13 +4056,11 @@ body.popup-show::after {
   .provide-we-services_media-gap .provide-we-services__section {
     gap: 1.25rem;
   }
-}
-
-@media (max-width: 29.99875em) {
-  .section-services_change-title-js:not(:last-child) {
-    padding-bottom: 0 !important;
+  .provide-we-services_media-gap .provide-we-services__section:not(:last-child) {
+    padding-bottom: 0;
   }
 }
+
 @media (min-width: 61.99875em) {
   .section-services_change-title-js :nth-child(1) {
     order: 1;
