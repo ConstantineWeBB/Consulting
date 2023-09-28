@@ -154,7 +154,7 @@ h6 {
   background-color: #465976;
   transition: all 0.8s ease;
 }
-@media (any-hover: hover) {
+@media (any-hover: hover) and (min-width: 61.99875em) {
   .button:hover {
     color: #fff;
     transition: all 1s ease;
