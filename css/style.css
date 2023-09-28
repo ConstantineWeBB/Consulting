@@ -531,6 +531,17 @@ body.popup-show::after {
   display: none;
 }
 
+.element-animation {
+  transform: translateX(100px);
+  opacity: 0;
+}
+
+.element-show {
+  opacity: 1;
+  transition: all 2s;
+  transform: translateX(0);
+}
+
 .header__container {
   display: flex;
   justify-content: space-between;
@@ -2099,15 +2110,6 @@ body.popup-show::after {
   .apart-us-sets-what__cards {
     grid-template-columns: repeat(1, 1fr);
   }
-}
-.apart-us-sets-what .element-animation {
-  transform: translateX(100px);
-  opacity: 0;
-}
-.apart-us-sets-what .element-show {
-  opacity: 1;
-  transition: all 2s;
-  transform: translateX(0);
 }
 .apart-us-sets-what__card {
   display: grid;
